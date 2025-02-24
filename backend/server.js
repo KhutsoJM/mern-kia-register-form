@@ -5,13 +5,13 @@ const app = express()
 
 app.use('/', (req, res, next) => {
     console.log(req.path, req.method)
-    res.json({msg: "Hello there!"})
+    res.json({ msg: "Hello there!" })
     next()
 })
 
 
 app.get('/register', (req, res) => {
-    res.json({msg: "registering the user"})
+    res.json({ msg: "registering the user" })
 })
 
 app.listen(4000, () => {
